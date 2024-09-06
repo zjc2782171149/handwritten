@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrap {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 300px 1fr 300px;
+    }
+
+    .left,
+    .right,
+    .middle {
+      height: 100px;
+    }
+
+    .left {
+      background: coral;
+    }
+
+    .right {
+      background: lightblue;
+    }
+
+    .middle {
+      background: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrap">
+    <div class="left">左侧</div>
+    <div class="middle">中间</div>
+    <div class="right">右侧</div>
+
+  </div>
+
+</body>
+
+</html>
