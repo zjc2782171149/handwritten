@@ -20,3 +20,15 @@ setTimeout(() => {
 a().then(() => {
   console.log(6);
 });
+
+
+
+// function f (count) {
+//   console.log(`foo${count}`);
+//   setTimeout(() => { console.log(`bar${count}`); });
+// }
+// f(1);
+// f(2);
+// setTimeout(() => { f(3); });
+
+// foo1, foo2, bar1, bar2, foo3, bar3
