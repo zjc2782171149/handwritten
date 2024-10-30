@@ -127,3 +127,20 @@ var person2 = { name: 'person2' }
 // }
 // console.log(obj.test3()); // 11
 
+// 12.
+var name = "windowsName";
+var a = {
+  name: "Cherry",
+  func1: function () {
+    console.log(this.name)
+  },
+  func2: function () {
+    // let that = this;
+    setTimeout(function () {
+      console.log(this.name);
+      // that.func1();
+    }, 100);
+  }
+}
+
+a.func2();

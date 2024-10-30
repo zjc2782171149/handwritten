@@ -29,8 +29,8 @@ function gets (ids, max) {
         (err) => {
           res[index] = err;
           loadcount++;
-          curIndex++;
-          load(ids[curIndex], curIndex);
+          if (loadcount < ids.length)
+            load(ids[curIndex++], curIndex);
         }
       );
     }

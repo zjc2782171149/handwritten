@@ -10,3 +10,12 @@ function debounce (fn, wait, immediate) {
   }
 }
 
+function log () {
+  console.log("a");
+}
+
+const debounceFn = debounce(log, 350, false);
+
+for (let i = 1; i <= 10; i++) {
+  setTimeout(debounceFn, i * 100); // 相当于每 100ms 都会触发一次防抖函数，都会导致 350ms 的计时器重新计时，之后最后一次会打印出'a'     
+}

@@ -1,25 +1,25 @@
-function a () {
-  console.log(1);
+// function a () {
+//   console.log(1);
 
-  const promise = new Promise(resolve => {
-    resolve();
-    console.log(2);
-  });
+//   const promise = new Promise(resolve => {
+//     resolve();
+//     console.log(2);
+//   });
 
-  console.log(3);
+//   console.log(3);
 
-  return promise;
-}
+//   return promise;
+// }
 
-console.log(4);
+// console.log(4);
 
-setTimeout(() => {
-  console.log(5);
-})
+// setTimeout(() => {
+//   console.log(5);
+// })
 
-a().then(() => {
-  console.log(6);
-});
+// a().then(() => {
+//   console.log(6);
+// });
 
 
 
@@ -32,3 +32,22 @@ a().then(() => {
 // setTimeout(() => { f(3); });
 
 // foo1, foo2, bar1, bar2, foo3, bar3
+
+new Promise((resolve, reject) => {
+
+  console.log(1)
+
+  // resolve(true);
+
+  console.log(2);
+
+  // throw new Error('err'); // 如果有，就中断这个函数，即后面的3不会打印
+
+  reject(false);
+
+  console.log(3)
+
+}).catch(ex => console.log(ex))
+  .then(res => console.log(res))
+
+// 1 2 3 true

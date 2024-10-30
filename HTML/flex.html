@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+</head>
+
+
+<body>
+
+  <div class="card_wrap">
+    <div class="c_item"></div>
+    <div class="c_item"></div>
+    <div class="c_item"></div>
+    <div class="c_item"></div>
+    <div class="c_item"></div>
+    <!-- <div class="c_item"></div> -->
+    <!-- <div class="c_item"></div> -->
+    <!-- <div class="c_item"></div> -->
+  </div>
+
+
+</body>
+
+<style>
+  .card_wrap {
+    width: 200px;
+    height: 150px;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+
+  }
+
+  .c_item {
+    box-sizing: border-box;
+    background-color: white;
+    flex: 0 0 33%;
+    height: 50px;
+    border: 1px solid red;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+</style>
+
+</html>
