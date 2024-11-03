@@ -37,11 +37,11 @@ new Promise((resolve, reject) => {
 
   console.log(1)
 
-  // resolve(true);
+  resolve(true);
 
   console.log(2);
 
-  // throw new Error('err'); // 如果有，就中断这个函数，即后面的3不会打印
+  throw new Error('err'); // 如果有，就中断这个函数，即后面的3不会打印
 
   reject(false);
 

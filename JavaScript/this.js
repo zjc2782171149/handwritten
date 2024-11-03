@@ -140,6 +140,10 @@ var a = {
       console.log(this.name);
       // that.func1();
     }, 100);
+
+    setTimeout(() => {
+      console.log(this.name);
+    }, 100);
   }
 }
 
